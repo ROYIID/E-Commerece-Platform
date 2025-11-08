@@ -30,7 +30,7 @@ def load_df(path, limit=None):
 # -------------------------------
 # Load reviews and metadata files
 # -------------------------------
-def load_amazon_dataset(data_dir="../data/raw/", category="Electronics", limit=200000):
+def load_amazon_dataset(data_dir="data/raw/", category="Electronics", limit=500000):
     """
     Load Amazon dataset (reviews + metadata) for a given category.
     Loads only up to 'limit' rows from each file to avoid memory issues.
@@ -59,7 +59,7 @@ def load_amazon_dataset(data_dir="../data/raw/", category="Electronics", limit=2
 # -------------------------------
 # Run directly (for testing)
 # -------------------------------
-reviews, meta = load_amazon_dataset(category="Electronics", limit=5000000)
+reviews, meta = load_amazon_dataset(category="Electronics", limit=500000)
 print("\n🧾 Reviews sample:")
 print(reviews.head())
 

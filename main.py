@@ -9,12 +9,20 @@ from src.content_recommender import (
     get_similar_items_content
 )
 
+from src.database.create_user_table import engine
+
 # ===============================
 # 1️⃣ Load cleaned data
 # ===============================
 print("📂 Loading cleaned datasets...")
-reviews = pd.read_csv("data/processed/reviews_clean.csv")
-meta = pd.read_csv("data/processed/meta_clean.csv")
+# reviews = pd.read_csv("data/processed/reviews_clean.csv")
+# meta = pd.read_csv("data/processed/meta_clean.csv")
+
+reviews = pd.read_sql('select * from reviews',engine)
+meta = pd.read_sql('select * from meta', engine)
+
+
+
 
 # If too large, limit meta rows temporarily for testing
 if len(meta) > 100000:

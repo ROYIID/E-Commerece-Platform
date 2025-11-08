@@ -47,5 +47,5 @@ def preprocess_metadata(meta_df):
 reviews_clean = preprocess_reviews(reviews)
 meta_clean = preprocess_metadata(meta)
 
-reviews_clean.to_csv("../data/processed/reviews_clean.csv", index=False)
-meta_clean.to_csv("../data/processed/meta_clean.csv", index=False)
+reviews_clean.to_csv("data/processed/reviews_clean_500k.csv", index=False)
+meta_clean.to_csv("data/processed/meta_clean_500k.csv", index=False)
