@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f1f5ff;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-card {
+    width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #0a3cff;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    margin-bottom: 18px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1.6px solid #d0d7ff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #0a3cff;
+    box-shadow: 0 0 0 2px rgba(10, 60, 255, 0.15);
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    background: #0a3cff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+
+.auth-button:hover {
+    background: #002bcc;
+}
+
+.switch-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.switch-text a {
+    color: #0a3cff;
+    text-decoration: none;
+    font-weight: 500;
+}

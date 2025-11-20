@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Home</title>
+    <link rel="stylesheet" href="{% static 'main_app/css/home.css' %}" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">TechStore</div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+            <a href="#" class="vendor-link">Vendor Portal</a>
+        </nav>
+
+        <div class="nav-icons">
+            <span>🌙</span>
+            <span>👤</span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <section class="search-bar">
+        <input type="text" placeholder="Search products..." />
+        <button class="search-btn">🔍</button>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Future of Technology</h1>
+            <p>
+                Premium smartphones, laptops, and accessories at unbeatable prices.
+                Free shipping on orders over $50.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary">Shop Now</button>
+                <button class="btn-secondary">View Deals</button>
+            </div>
+
+            <img src="hero-product.jpg" class="hero-image" alt="Featured Product" />
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+
+        <div class="category-grid">
+            <div class="category-card">Smartphones</div>
+            <div class="category-card">Laptops</div>
+            <div class="category-card">Accessories</div>
+        </div>
+    </section>
+
+</body>
+</html>
